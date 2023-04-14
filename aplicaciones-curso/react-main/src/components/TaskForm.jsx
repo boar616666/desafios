@@ -86,8 +86,8 @@ function Form({ productId }) {
   
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form onSubmit={handleSubmit} className='bg-purple-700 p-10 mb-4 w-1/2'>
+    <div className="bg-blue-900 flex justify-center items-center h-screen">
+      <form onSubmit={handleSubmit} className='bg-blue-700 p-10 mb-4 w-1/2'>
         <h1 className='text-2xl font-bold text-white mb-3'>
           {productId ? 'Actualizar producto' : 'Crear producto'}
         </h1>
@@ -97,30 +97,30 @@ function Form({ productId }) {
           onChange={handleChange}
           value={formData.name}
           autoFocus
-          className='bg-purple-300 p-3 w-full mb-2'
+          className='bg-blue-300 p-3 w-full mb-2'
         />
         <input
           placeholder='Especifica el precio'
           name='price'
           onChange={handleChange}
           value={formData.price}
-          className='bg-purple-300 p-3 w-full mb-2'
+          className='bg-blue-300 p-3 w-full mb-2'
         />
         <textarea
           placeholder='Escribe la descripción'
           name='description'
           onChange={handleChange}
           value={formData.description}
-          className='bg-purple-300 p-3 w-full mb-2'
+          className='bg-blue-300 p-3 w-full mb-2'
         ></textarea>
         <input
           type='file'
           name='images'
           onChange={handleChange}
           accept='image/*'
-          className='bg-purple-300 p-3 w-full mb-2'
+          className='bg-blue-300 p-3 w-full mb-2'
         />
-        <button type='submit' className='bg-pink-500 px-3 py-1 text-white'>
+        <button type='submit' className='bg-red-500 px-3 py-1 text-white'>
           {productId ? 'Actualizar' : 'Guardar'}
         </button>
       </form>

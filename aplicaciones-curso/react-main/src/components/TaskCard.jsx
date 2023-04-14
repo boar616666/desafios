@@ -33,7 +33,7 @@ export default function TaskCard({ task }) {
     setEditing(false);
   };
 
-  const handleDelete = () => {
+  const handDelete = () => {
     deleteProduct(task._id);
   };
 
@@ -102,7 +102,7 @@ export default function TaskCard({ task }) {
               Editar
             </button>
             <button
-              onClick={handleDelete}
+              onClick={handDelete}
               className='bg-red-600 px-2 py-1 rounded-md hover:bg-red-400'
             >
               Eliminar
